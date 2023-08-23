@@ -59,7 +59,6 @@ After training the model on the train data the overall recall improved and the m
 * Evaluate station and bicycle conditions.
 
 ```
-├── data
 ├── images
 ├── .gitignore
 ├── Chicago Lyft Divvy Presentation.pdf
