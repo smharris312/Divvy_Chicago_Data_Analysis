@@ -1,4 +1,4 @@
-![1][divvy_banner](./images/divvy_banner.avif)
+<img src="images/divvy_banner.avif" alt="Sample Image" width="1000">    
 
 # Chicago Divvy/Lyft Bicycle Subscriber Analysis
 ### Author: [Sean Harris](https://www.linkedin.com/in/sean-harris-data-sci-and-finance/)
@@ -37,15 +37,15 @@ The dataset used for this analysis is publicly available on the [City of Chicago
 * Only includes 2019 data
 * Missing data for age and gender 
 * Target variable is imbalanced favoring Subscribers
-![2][target](./images/target.png)
+<img src="images/target.png" alt="Target" width="400">
 
-* age data is imbalanced
-![3][age](./images/age.png)
+* Gender data is imbalanced
+<img src="images/gender.png" alt="Gender" width="400">
 
 ## Model Interpretation
 Grid search was used to run two models with various parameters to determine the best model. The best performing model was the Decision Tree. The training data Decision Tree had a recall score of 0.84 compared to the Logistic Regression model that had a recall score of 0.71. The key metric for this analysis is recall because that will minimize the false negatives and maximize the true positives which will give us better performance on predicting Divvy Subscribers. The Decision Tree ran faster than the Logistic Regression and had better performance across all metrics. The most important feature in determining a Subscriber is by far the riders age which accounts for 78.1% of feature importance.
 
-![4][feature_importance](./images/feature_importance.png)
+<img src="images/feature_importance.png" alt="feature_importance" width="400">
 
 After training the model on the train data the overall recall improved and the model correctly identifies Subscribers 87.12% of the time. This is a first pass and we will need to add additional features and run more complex models to see if we can improve recall performance.
 
